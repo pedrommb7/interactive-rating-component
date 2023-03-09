@@ -2,5 +2,54 @@
 @use "assets/styles/main.scss" as *;
 
 .App {
-  text-align: center;
+  height: 100vh;
+  .card {
+    background-color: $color-neutral-darkblue;
+
+    h1 {
+      color: $color-neutral-white;
+    }
+
+    p {
+      color: $color-neutral-lightgrey;
+      line-height: $line-height-24;
+    }
+
+    &__rating {
+      &__number {
+        color: $color-neutral-lightgrey;
+        background-color: $color-neutral-grey;
+        height: 42px;
+        width: 42px;
+
+        &:hover {
+          background-color: $color-primary-orange;
+          transition: all 0.5s ease-in-out;
+          color: $color-neutral-white;
+          cursor: pointer;
+        }
+      }
+    }
+
+    &__submit {
+      background-color: $color-primary-orange;
+      color: $color-neutral-white;
+      border: none;
+      font-family: $font-family-overpass;
+      font-weight: $font-weight-bold;
+      letter-spacing: 2px;
+
+      &:hover {
+        background-color: $color-neutral-white;
+        transition: all 0.5s ease-in-out;
+        color: $color-primary-orange;
+        cursor: pointer;
+      }
+    }
+  }
+
+  footer {
+    color: $color-neutral-white;
+    text-align: center;
+  }
 }
