@@ -6,8 +6,16 @@
   .card {
     background-color: $color-neutral-darkblue;
 
+    &__svg {
+      color: $color-neutral-lightgrey;
+      background-color: $color-neutral-grey;
+      height: 42px;
+      width: 42px;
+    }
+
     h1 {
       color: $color-neutral-white;
+      font-size: $font-size-24;
     }
 
     p {
