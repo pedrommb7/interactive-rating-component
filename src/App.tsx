@@ -13,8 +13,11 @@ function App() {
 
   return (
     <div className="App flex flex--column flex__align--center flex__justify--center">
-      <RatingCard stateFromParentComponent={handleClick} />
-      {showThankyouCard ? <ThankyouCard /> : null}
+      {showThankyouCard ? (
+        <ThankyouCard />
+      ) : (
+        <RatingCard stateOfThankyouCard={handleClick} />
+      )}
       <Footer className="my--12" />
     </div>
   );

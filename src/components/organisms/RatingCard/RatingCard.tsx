@@ -7,11 +7,7 @@ import Svg from "../../atoms/Svg/Svg";
 import { IconStar } from "../../../assets/svg";
 import "../../../App.scss";
 
-const RatingCard = ({
-  stateFromParentComponent,
-}: {
-  stateFromParentComponent: any;
-}) => {
+const RatingCard = ({ stateOfThankyouCard }: { stateOfThankyouCard: any }) => {
   return (
     <main className="card flex flex--column flex--wrap flex__justify--center mx--28 px--24 py--32 border-radius--25">
       <Svg
@@ -25,17 +21,11 @@ const RatingCard = ({
         }
       />
       <RatingButton />
-      <button
-        className="card__submit flex flex__justify--center border-radius--25 p--16"
-        onClick={stateFromParentComponent}
-      >
-        SUBMIT
-      </button>
-      {/* <Button
+      <Button
         className="card__submit flex flex__justify--center border-radius--25 p--16 "
         text={"SUBMIT"}
-        onClick={stateFromParent}
-      /> */}
+        onClick={stateOfThankyouCard}
+      />
     </main>
   );
 };
