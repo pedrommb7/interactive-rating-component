@@ -37,6 +37,11 @@
           cursor: pointer;
         }
       }
+
+      &__statement {
+        color: $color-primary-orange !important;
+        background-color: $color-neutral-grey;
+      }
     }
 
     &__submit {
@@ -47,7 +52,9 @@
       font-weight: $font-weight-bold;
       letter-spacing: 2px;
 
-      &:hover {
+      &:hover,
+      &:active,
+      &:focus {
         background-color: $color-neutral-white;
         transition: all 0.5s ease-in-out;
         color: $color-primary-orange;
