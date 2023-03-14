@@ -6,17 +6,22 @@ import "./App.scss";
 
 function App() {
   const [showThankyouCard, setShowThankyouCard] = useState(false);
+  const [selectedRating, setSelectedRating] = useState(Number);
 
   const handleClick = () => {
     setShowThankyouCard(true);
   };
 
+  const handleValue = (ratingValue: React.SetStateAction<number>) => {
+    setSelectedRating(ratingValue);
+  };
+
   return (
     <div className="App flex flex--column flex__align--center flex__justify--center">
       {showThankyouCard ? (
-        <ThankyouCard />
+        <ThankyouCard rate={selectedRating} />
       ) : (
-        <RatingCard stateOfThankyouCard={handleClick} />
+        <RatingCard onRating={handleValue} stateOfThankyouCard={handleClick} />
       )}
       <Footer className="my--12" />
     </div>
