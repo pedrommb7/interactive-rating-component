@@ -75,6 +75,11 @@
     color: $color-neutral-white;
     text-align: center;
 
+    a:nth-of-type(2):hover {
+      color: $color-primary-orange;
+      transition: all 0.3s ease-in-out;
+    }
+
     @include isMediaTabletLandscape() {
       max-width: 25%;
     }
