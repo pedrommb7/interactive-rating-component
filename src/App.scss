@@ -2,9 +2,15 @@
 @use "assets/styles/main.scss" as *;
 
 .App {
+  display: flex;
   height: 100vh;
+
   .card {
     background-color: $color-neutral-darkblue;
+
+    @include isMediaDesktop() {
+      max-width: 25%;
+    }
 
     &__svg {
       color: $color-neutral-lightgrey;
@@ -27,10 +33,12 @@
       &__number {
         color: $color-neutral-lightgrey;
         background-color: $color-neutral-grey;
-        height: 42px;
-        width: 42px;
+        height: 48px;
+        width: 48px;
 
-        &:hover {
+        &:hover,
+        &:active,
+        &:focus {
           background-color: $color-primary-orange;
           transition: all 0.5s ease-in-out;
           color: $color-neutral-white;
@@ -66,5 +74,9 @@
   footer {
     color: $color-neutral-white;
     text-align: center;
+
+    @include isMediaDesktop() {
+      max-width: 25%;
+    }
   }
 }

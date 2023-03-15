@@ -9,7 +9,7 @@ const RatingButton = ({ onRating }: { onRating: any }) => {
   };
 
   return (
-    <section className="card__rating flex flex__justify--space-between mt--12 mb--24">
+    <section className="card__rating flex flex__justify--space-between mt--12 mb--32">
       {buttonValues.map((rating) => (
         <Button
           key={rating}

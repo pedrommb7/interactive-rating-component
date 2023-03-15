@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React from "react";
 import Paragraph from "../../atoms/Paragraph/Paragraph";
 import Heading from "../../atoms/Heading/Heading";
 import Button from "../../atoms/Button/Button";
