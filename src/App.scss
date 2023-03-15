@@ -8,7 +8,7 @@
   .card {
     background-color: $color-neutral-darkblue;
 
-    @include isMediaDesktop() {
+    @include isMediaTabletLandscape() {
       max-width: 25%;
     }
 
@@ -75,7 +75,7 @@
     color: $color-neutral-white;
     text-align: center;
 
-    @include isMediaDesktop() {
+    @include isMediaTabletLandscape() {
       max-width: 25%;
     }
   }
