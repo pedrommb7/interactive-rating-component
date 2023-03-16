@@ -9,7 +9,7 @@
     background-color: $color-neutral-darkblue;
 
     @include isMediaTabletLandscape() {
-      max-width: 25%;
+      max-width: 30%;
     }
 
     &__svg {
@@ -78,10 +78,6 @@
     a:nth-of-type(2):hover {
       color: $color-primary-orange;
       transition: all 0.3s ease-in-out;
-    }
-
-    @include isMediaTabletLandscape() {
-      max-width: 25%;
     }
   }
 }
