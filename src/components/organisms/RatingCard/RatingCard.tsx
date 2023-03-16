@@ -11,8 +11,8 @@ const RatingCard = ({
   stateOfThankyouCard,
   onRating,
 }: {
-  stateOfThankyouCard: any;
-  onRating: any;
+  stateOfThankyouCard: () => void;
+  onRating: (value: number) => void;
 }) => {
   const handleValue = (ratingValue: number) => {
     onRating(ratingValue);

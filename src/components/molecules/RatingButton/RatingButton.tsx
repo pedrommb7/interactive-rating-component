@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "../../atoms/Button/Button";
 
-const RatingButton = ({ onRating }: { onRating: any }) => {
+const RatingButton = ({ onRating }: { onRating: (value: number) => void }) => {
   const buttonValues = [1, 2, 3, 4, 5];
 
   const handleValue = (ratingValue: number) => {
